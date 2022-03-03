@@ -84,7 +84,9 @@ public class Locomotion : MonoBehaviour
         Vector3 move = VRCamera.transform.rotation * new Vector3(m.x, 0, m.y);
         move.y = 0f;
 
-        transform.position = transform.position + move * Time.deltaTime * playerSpeed;
+        //transform.position = transform.position + move * Time.deltaTime * playerSpeed;
+        controller.Move(move *playerSpeed* Time.deltaTime);
+
 
     }
 
