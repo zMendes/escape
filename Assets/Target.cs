@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+
+    public bool isHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +21,6 @@ public class Target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("Acertou o target");
+        isHit = true;
     }
 }
