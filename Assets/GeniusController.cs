@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
@@ -12,6 +12,9 @@ public class GeniusController : MonoBehaviour
     public GameObject green_;
     public GameObject yellow_;
     public GameObject playButton;
+    public GameObject text_;
+
+    TextMesh text;
 
     HoverButton red, blue, green, yellow, play;
     private List<Color> colors = new List<Color>();
@@ -36,6 +39,7 @@ public class GeniusController : MonoBehaviour
         blue = blue_.GetComponent<HoverButton>();
         yellow = yellow_.GetComponent<HoverButton>();
         play = playButton.GetComponent<HoverButton>();
+        text = text_.GetComponent<TextMesh>();
 
 
         colors.Add(Color.green);
@@ -56,27 +60,35 @@ public class GeniusController : MonoBehaviour
 
 
     IEnumerator StartGame(int n){
-        int count =0;
-        while (count < n){
-        
-        sequence.Add(colors[Random.Range(0, 4)]);
-        l.color = sequence[sequence.Count - 1];
-        foreach (Color color in sequence){
-            l.color = color;
-            yield return new WaitForSeconds(2.0f);
-            l.color = Color.black;
-            yield return new WaitForSeconds(.5f);
-        }
-        yield return new WaitForSeconds(10.0f);
-        if (!CheckMatch(sequence, buttonSequence)){
-            l.color = Color.black;
-            changeButtons(false);
-            yield break;
-            } 
-        count++;
-        buttonSequence.Clear();
+        text.text = "Starting Game";
+        int count = 1;
+        while (count <= n){
+            text.text = "Level " + count + "/" + n;
+            sequence.Add(colors[Random.Range(0, 4)]);
+            l.color = sequence[sequence.Count - 1];
+            foreach (Color color in sequence){
+                l.color = color;
+                yield return new WaitForSeconds(2.0f);
+                l.color = Color.black;
+                yield return new WaitForSeconds(.5f);
+            }
+            text.text = "Waiting you for 10s";
+            yield return new WaitForSeconds(10.0f);
+            if (!CheckMatch(sequence, buttonSequence)){
+                l.color = Color.black;
+                text.text = "You lose";
+                count = 1;
+                changeButtons(false);
+                yield break;
+                }
+            if (count == n){
+                text.text = "B: XXXII * XCVIII";
+            }
+            count++;
+            buttonSequence.Clear();
         }
     changeButtons(false);
+    
     }
     // Update is called once per frame
     void Update()
