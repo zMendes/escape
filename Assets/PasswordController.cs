@@ -13,7 +13,7 @@ public class PasswordController : MonoBehaviour
     List<int> password = new List<int>();
     List<int> truePassword; //= new List<int>();
     void Start(){
-        truePassword = new List<int>( new int[] {1,2,3,4,5,6});
+        truePassword = new List<int>( new int[] {9,0,7,2,3,1,3,6});
 
     }
 

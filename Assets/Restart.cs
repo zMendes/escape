@@ -8,7 +8,6 @@ public class Restart : MonoBehaviour
 {
 
     public void RestartScene(){
-        print("FUCK");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
