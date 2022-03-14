@@ -29,7 +29,6 @@ public class Counter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(target1.isHit);
         //Para cada filho, se todos estiverem true, clear the area
         if (target1.isHit && target2.isHit && target3.isHit){
             print("All clear");
