@@ -10,4 +10,8 @@ public class Restart : MonoBehaviour
     public void RestartScene(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void QuitGame(){
+        Application.Quit();
+    }
 }

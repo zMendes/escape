@@ -8,7 +8,7 @@ public class PasswordController : MonoBehaviour
 
     public Text digits;
 
-    public Text endgame;
+    public GameObject endgame;
 
     public List<GameObject> buttons = new List<GameObject>();
 
@@ -24,6 +24,7 @@ public class PasswordController : MonoBehaviour
     }
 
     public void buttonPressed(int number){
+        print("FUCK OFFFF");
 
         if (number == -1 )
             checkAnswer();
@@ -49,13 +50,14 @@ public class PasswordController : MonoBehaviour
         }
         else {
             password.Clear();
+            digits.text = "";
         }
     }
 
     void endGame(){
         print("ENDGAME");
         digits.color = Color.green;
-        endgame.text= "Congratuliations, you beat the game";
+        endgame.SetActive(true);
 
     }
 
