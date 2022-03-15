@@ -72,11 +72,13 @@ public class GeniusController : MonoBehaviour
                 l.color = Color.black;
                 yield return new WaitForSeconds(.5f);
             }
-            text.text = "Waiting you for 10s";
-            yield return new WaitForSeconds(10.0f);
+            text.text = "Your turn";
+            yield return new WaitForSeconds(count *2 + 5f);
             if (!CheckMatch(sequence, buttonSequence)){
                 l.color = Color.black;
                 text.text = "You lose";
+                sequence.Clear();
+                buttonSequence.Clear();
                 count = 1;
                 changeButtons(false);
                 yield break;

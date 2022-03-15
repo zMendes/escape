@@ -1624,7 +1624,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &221100636 stripped
 GameObject:
@@ -2453,7 +2453,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &480160787
 GameObject:
@@ -3221,7 +3221,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &747456094
 PrefabInstance:
@@ -4784,7 +4784,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1177821389
 GameObject:
@@ -5387,7 +5387,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1345934697
 GameObject:
@@ -5600,7 +5600,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1358288350
 GameObject:
@@ -6344,7 +6344,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1540192500
 GameObject:
@@ -6676,7 +6676,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1587835281
 GameObject:
@@ -6787,7 +6787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8828af65ff352428f715ca7f62c4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ITER: 10
+  ITER: 8
   spotlight: {fileID: 1020090864}
   red_: {fileID: 2131898974}
   blue_: {fileID: 980891930}
@@ -7485,7 +7485,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1771827416
 GameObject:
@@ -7698,7 +7698,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1775447502
 PrefabInstance:
@@ -8235,6 +8235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   digits: {fileID: 531391864}
+  endgame: {fileID: 0}
   buttons:
   - {fileID: 0}
   - {fileID: 0}
@@ -8630,7 +8631,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2109028863
 GameObject:
@@ -8843,7 +8844,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 35, y: 25, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2131898974
 GameObject:

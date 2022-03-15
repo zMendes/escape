@@ -8,6 +8,8 @@ public class PasswordController : MonoBehaviour
 
     public Text digits;
 
+    public Text endgame;
+
     public List<GameObject> buttons = new List<GameObject>();
 
     List<int> password = new List<int>();
@@ -53,6 +55,7 @@ public class PasswordController : MonoBehaviour
     void endGame(){
         print("ENDGAME");
         digits.color = Color.green;
+        endgame.text= "Congratuliations, you beat the game";
 
     }
 
