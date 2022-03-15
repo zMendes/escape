@@ -15,7 +15,7 @@ public class PasswordController : MonoBehaviour
     List<int> password = new List<int>();
     List<int> truePassword; //= new List<int>();
     void Start(){
-        truePassword = new List<int>( new int[] {9,0,7,2,3,1,3,6});
+        truePassword = new List<int>( new int[] {1,0,7,9,2,0,2,9});
 
     }
 
@@ -24,7 +24,6 @@ public class PasswordController : MonoBehaviour
     }
 
     public void buttonPressed(int number){
-        print("FUCK OFFFF");
 
         if (number == -1 )
             checkAnswer();
@@ -62,6 +61,9 @@ public class PasswordController : MonoBehaviour
     }
 
     bool CheckMatch(List<int> l1, List<int> l2) {
+        if (l1.Count != l2.Count){
+            return false;
+        }
         for (int i = 0; i < l1.Count; i++) {
             print(l1[i] == l2[i]);
             if (l1[i] != l2[i])

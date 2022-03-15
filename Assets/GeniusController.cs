@@ -84,7 +84,7 @@ public class GeniusController : MonoBehaviour
                 yield break;
                 }
             if (count == n){
-                text.text = "B: XXXII * XCVIII";
+                text.text = "B: MMXXIX";
             }
             count++;
             buttonSequence.Clear();
